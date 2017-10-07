@@ -1,0 +1,29 @@
+{% extends 'login.css' %}
+{% block content %}
+
+<title> Cadastro</title>
+<link rel= "stylersheet"  href=('static'"index.css")>
+<link rel= "stylersheet"  href="{{url_for ('static', filename = "css/bootstrap.min.css")}}">
+</head>
+<body>
+<form action="/login" method="POST">
+  <div class="container">
+  	<div id="login-box">
+  		<div class="logo">
+  			<img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="img img-responsive img-circle center-block"/>
+  			<h1 class="logo-caption"><span class="tweak"></span>CADASTRE-SE</h1>
+  		</div>
+  		<div class="form-login">
+  			<input type="text" name="username" placeholder="Username" class="form-control" />
+  			<input type="text" name="password" placeholder="Password" class="form-control" />
+  			<button type="button" class="btn btn-default btn-block btn-custom">Login</button>
+  		</div>
+  	</div>
+  </div>
+</form>
+  <div id="particles-js"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <srcipt href="{{url_for ('static', filename = "js/bootstrap.min.js")}}" ></script>
+{% endblock %}
+</body>
+</html>
