@@ -1,5 +1,5 @@
 
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:rc102030@localhost/work'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:@localhost/work'
 
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 
